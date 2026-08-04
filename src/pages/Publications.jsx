@@ -1,5 +1,4 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 
 export default function Publications() {
   const publicationsList = [
@@ -206,8 +205,7 @@ export default function Publications() {
 
   return (
     <>
-      <Navbar />
-      <main className="flex-grow w-full max-w-container-max mx-auto px-4 md:px-8 py-section-gap-md md:py-section-gap-lg">
+      <main className="flex-grow w-full max-w-container-max mx-auto px-4 md:px-8 pt-8 md:pt-16 pb-section-gap-md md:pb-section-gap-lg">
         
         {/* Peer-Reviewed Publications */}
         <section className="mb-section-gap-lg">
@@ -277,7 +275,6 @@ export default function Publications() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

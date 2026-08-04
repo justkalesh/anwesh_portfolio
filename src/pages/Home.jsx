@@ -1,5 +1,4 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 import Hero from '../components/Hero';
 import Metrics from '../components/Metrics';
 import ResearchFocus from '../components/ResearchFocus';
@@ -11,8 +10,7 @@ import Honours from '../components/Honours';
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <main className="flex-grow w-full max-w-container-max mx-auto px-4 md:px-8 py-section-gap-md md:py-section-gap-lg">
+      <main className="flex-grow w-full max-w-container-max mx-auto px-4 md:px-8 pt-8 md:pt-16 pb-section-gap-md md:pb-section-gap-lg">
         <Hero />
         <Metrics />
         <ResearchFocus />
@@ -21,7 +19,6 @@ export default function Home() {
         <Skills />
         <Honours />
       </main>
-      <Footer />
     </>
   );
 }

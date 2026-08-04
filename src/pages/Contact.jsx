@@ -1,5 +1,4 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 
 export default function Contact() {
   const references = [
@@ -27,8 +26,7 @@ export default function Contact() {
 
   return (
     <>
-      <Navbar />
-      <main className="flex-grow w-full max-w-container-max mx-auto px-4 md:px-8 py-section-gap-md md:py-section-gap-lg">
+      <main className="flex-grow w-full max-w-container-max mx-auto px-4 md:px-8 pt-8 md:pt-16 pb-section-gap-md md:pb-section-gap-lg">
         <h1 className="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-academic-navy mb-12">Contact & Profiles</h1>
 
         <div className="grid md:grid-cols-2 gap-12 mb-section-gap-lg">
@@ -110,7 +108,6 @@ export default function Contact() {
           </section>
         </div>
       </main>
-      <Footer />
     </>
   );
 }
