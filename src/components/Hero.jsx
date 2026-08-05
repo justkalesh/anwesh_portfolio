@@ -35,9 +35,10 @@ export default function Hero() {
         <div className="relative">
           <div className="relative w-56 h-56 md:w-80 md:h-80 rounded-[2rem] border border-border-subtle overflow-hidden bg-surface-container shadow-[0_4px_20px_rgba(15,23,42,0.05)] mx-auto">
             <img 
-              src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=mIyCMpQAAAAJ&citpid=10" 
+              src="/images/profile.jpg" 
               alt="Dr. Anwesh Pandey" 
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           {/* Current Focus Badge */}

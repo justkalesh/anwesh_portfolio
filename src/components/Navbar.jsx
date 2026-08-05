@@ -99,18 +99,21 @@ export default function Navbar() {
         </div>
       </div>
       
-      {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-surface-container-lowest border-t border-border-subtle absolute w-full shadow-lg">
-          <div className="flex flex-col px-4 py-4 space-y-4">
-            {navLinks.map((link) => (
-              <Link key={link.path} to={link.path} className={isMobileActive(link.path)} onClick={closeMenu}>{link.name}</Link>
-            ))}
-            <a href="/Anwesh_Pandey_CV.pdf" download="Anwesh_Pandey_CV.pdf" onClick={closeMenu} className="inline-block bg-academic-navy text-center text-on-primary font-subhead-bold text-subhead-bold px-6 py-3 rounded transition-opacity active:opacity-80 mt-2">
-              Download CV
-            </a>
+        <>
+          {/* Invisible backdrop to close menu on outside click */}
+          <div className="fixed inset-0 z-40" onClick={closeMenu} />
+          <div className="md:hidden bg-surface-container-lowest border-t border-border-subtle absolute w-full shadow-lg z-50">
+            <div className="flex flex-col px-4 py-4 space-y-4">
+              {navLinks.map((link) => (
+                <Link key={link.path} to={link.path} className={isMobileActive(link.path)} onClick={closeMenu}>{link.name}</Link>
+              ))}
+              <a href="/Anwesh_Pandey_CV.pdf" download="Anwesh_Pandey_CV.pdf" onClick={closeMenu} className="inline-block bg-academic-navy text-center text-on-primary font-subhead-bold text-subhead-bold px-6 py-3 rounded transition-opacity active:opacity-80 mt-2">
+                Download CV
+              </a>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </nav>
   );

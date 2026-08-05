@@ -27,50 +27,58 @@ export default function Contact() {
   return (
     <>
       <main className="flex-grow w-full max-w-container-max mx-auto px-4 md:px-8 pt-8 md:pt-16 pb-section-gap-md md:pb-section-gap-lg">
-        <h1 className="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-academic-navy mb-12">Contact & Profiles</h1>
+        <h1 className="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-academic-navy mb-8 md:mb-12">Contact & Profiles</h1>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-section-gap-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mb-12 md:mb-section-gap-lg">
           <section>
             <h2 className="font-headline-section text-headline-section text-academic-navy border-l-4 border-academic-navy pl-4 mb-6">Personal Details</h2>
-            <div className="bg-surface-container-lowest border border-border-subtle rounded-lg p-6 space-y-4">
-              <div className="flex items-center space-x-4">
-                <span className="material-symbols-outlined text-slate-gray" data-icon="mail">mail</span>
-                <span className="font-body-main text-body-main text-academic-navy">apdapbbau@gmail.com, anwesh.pandey@mail.huji.ac.il</span>
+            <div className="bg-surface-container-lowest border border-border-subtle rounded-lg p-4 md:p-6 space-y-4">
+              <div className="flex items-start space-x-3 md:space-x-4">
+                <span className="material-symbols-outlined text-slate-gray flex-shrink-0 mt-0.5" data-icon="mail">mail</span>
+                <div className="font-body-secondary md:font-body-main text-body-secondary md:text-body-main text-academic-navy break-all">
+                  <a href="mailto:apdapbbau@gmail.com" className="hover:underline">apdapbbau@gmail.com</a>
+                  <span className="text-slate-gray mx-1">,</span>
+                  <a href="mailto:anwesh.pandey@mail.huji.ac.il" className="hover:underline">anwesh.pandey@mail.huji.ac.il</a>
+                </div>
               </div>
-              <div className="flex items-center space-x-4">
-                <span className="material-symbols-outlined text-slate-gray" data-icon="phone">phone</span>
-                <span className="font-body-main text-body-main text-academic-navy">+91-9452444164</span>
+              <div className="flex items-center space-x-3 md:space-x-4">
+                <span className="material-symbols-outlined text-slate-gray flex-shrink-0" data-icon="phone">phone</span>
+                <a href="tel:+919452444164" className="font-body-secondary md:font-body-main text-body-secondary md:text-body-main text-academic-navy hover:underline">+91-9452444164</a>
               </div>
-              <div className="flex items-center space-x-4">
-                <span className="material-symbols-outlined text-slate-gray" data-icon="location_on">location_on</span>
-                <span className="font-body-main text-body-main text-academic-navy">Gorakhpur, U.P., India</span>
+              <div className="flex items-center space-x-3 md:space-x-4">
+                <span className="material-symbols-outlined text-slate-gray flex-shrink-0" data-icon="location_on">location_on</span>
+                <span className="font-body-secondary md:font-body-main text-body-secondary md:text-body-main text-academic-navy">Gorakhpur, U.P., India</span>
               </div>
             </div>
           </section>
 
           <section>
             <h2 className="font-headline-section text-headline-section text-academic-navy border-l-4 border-academic-navy pl-4 mb-6">Professional Profiles</h2>
-            <div className="bg-surface-container-lowest border border-border-subtle rounded-lg p-6 space-y-4 flex flex-col">
-              <a href="https://www.scopus.com/authid/detail.uri?authorId=57219981694" target="_blank" rel="noreferrer" className="font-body-main text-body-main text-academic-navy hover:underline">
-                SCOPUS Profile
+            <div className="bg-surface-container-lowest border border-border-subtle rounded-lg p-4 md:p-6 space-y-3 flex flex-col">
+              <a href="https://www.scopus.com/authid/detail.uri?authorId=57219981694" target="_blank" rel="noreferrer" className="flex items-center space-x-3 font-body-secondary md:font-body-main text-body-secondary md:text-body-main text-academic-navy hover:underline py-1">
+                <span className="material-symbols-outlined text-slate-gray flex-shrink-0" data-icon="link">link</span>
+                <span>SCOPUS Profile</span>
               </a>
-              <a href="https://scholar.google.com/citations?user=mIyCMpQAAAAJ&hl=en" target="_blank" rel="noreferrer" className="font-body-main text-body-main text-academic-navy hover:underline">
-                Google Scholar Profile
+              <a href="https://scholar.google.com/citations?user=mIyCMpQAAAAJ&hl=en" target="_blank" rel="noreferrer" className="flex items-center space-x-3 font-body-secondary md:font-body-main text-body-secondary md:text-body-main text-academic-navy hover:underline py-1">
+                <span className="material-symbols-outlined text-slate-gray flex-shrink-0" data-icon="school">school</span>
+                <span>Google Scholar Profile</span>
               </a>
-              <a href="https://www.researchgate.net/scientific-contributions/Anwesh-Pandey-2198733402" target="_blank" rel="noreferrer" className="font-body-main text-body-main text-academic-navy hover:underline">
-                ResearchGate Profile
+              <a href="https://www.researchgate.net/scientific-contributions/Anwesh-Pandey-2198733402" target="_blank" rel="noreferrer" className="flex items-center space-x-3 font-body-secondary md:font-body-main text-body-secondary md:text-body-main text-academic-navy hover:underline py-1">
+                <span className="material-symbols-outlined text-slate-gray flex-shrink-0" data-icon="science">science</span>
+                <span>ResearchGate Profile</span>
               </a>
-              <a href="https://www.linkedin.com/in/anwesh-pandey-61831a2a5/" target="_blank" rel="noreferrer" className="font-body-main text-body-main text-academic-navy hover:underline">
-                LinkedIn Profile
+              <a href="https://www.linkedin.com/in/anwesh-pandey-61831a2a5/" target="_blank" rel="noreferrer" className="flex items-center space-x-3 font-body-secondary md:font-body-main text-body-secondary md:text-body-main text-academic-navy hover:underline py-1">
+                <span className="material-symbols-outlined text-slate-gray flex-shrink-0" data-icon="person">person</span>
+                <span>LinkedIn Profile</span>
               </a>
             </div>
           </section>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-section-gap-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mb-12 md:mb-section-gap-lg">
           <section>
             <h2 className="font-headline-section text-headline-section text-academic-navy border-l-4 border-academic-navy pl-4 mb-6">Reviewer & Editing</h2>
-            <div className="bg-surface-container-lowest border border-border-subtle rounded-lg p-6 space-y-6">
+            <div className="bg-surface-container-lowest border border-border-subtle rounded-lg p-4 md:p-6 space-y-6">
               <div>
                 <h3 className="font-subhead-bold text-subhead-bold text-academic-navy mb-2">Reviewer For</h3>
                 <ul className="list-disc pl-5 font-body-secondary text-body-secondary text-on-surface-variant space-y-1">
@@ -88,7 +96,7 @@ export default function Contact() {
               <div>
                 <h3 className="font-subhead-bold text-subhead-bold text-academic-navy mb-2">Editing Experiences</h3>
                 <p className="font-body-secondary text-body-secondary text-on-surface-variant">
-                  Co-editor for Frontiers in Molecular Biosciences “Advancing Protein and Peptide Research through Multiscale Modelling and Machine Learning”
+                  Co-editor for Frontiers in Molecular Biosciences "Advancing Protein and Peptide Research through Multiscale Modelling and Machine Learning"
                 </p>
               </div>
             </div>
@@ -98,10 +106,10 @@ export default function Contact() {
             <h2 className="font-headline-section text-headline-section text-academic-navy border-l-4 border-academic-navy pl-4 mb-6">References</h2>
             <div className="flex flex-col space-y-4">
               {references.map((ref, i) => (
-                <div key={i} className="bg-surface-container-lowest border border-border-subtle rounded-lg p-5">
+                <div key={i} className="bg-surface-container-lowest border border-border-subtle rounded-lg p-4 md:p-5">
                   <h4 className="font-subhead-bold text-subhead-bold text-academic-navy mb-1">{ref.name}</h4>
                   <div className="font-body-secondary text-body-secondary text-slate-gray mb-2">{ref.affiliation}</div>
-                  <a href={`mailto:${ref.email}`} className="font-label-mono text-label-mono text-tertiary-container hover:underline">{ref.email}</a>
+                  <a href={`mailto:${ref.email}`} className="font-label-mono text-label-mono text-academic-navy hover:underline break-all">{ref.email}</a>
                 </div>
               ))}
             </div>

@@ -16,7 +16,7 @@ export default function ResearchFocus() {
             Exploring the forces that stabilize biomolecular structures, utilizing high-level computational methods to dissect complex binding networks.
           </p>
           <div className="mt-6 w-full h-32 bg-surface-container border border-border-subtle rounded overflow-hidden">
-            <img className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Noncovalent Interactions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnpEipxjD-fHcbVXKFpBKmpCagpOEZUYQAvaBwfkChSFyLvg4KUF2ggzqfYO-k-A4zQ-7VWUEkABdB9yq7b6hVpCe3aNIjC1cwLkSlmw0k1wMXuUpEl9IARGSvsj0QI1Uqxd-LNjOjfQrYWYMCTg-XwJDZJh-iQuq-B_EFNG--0BUmcMmUxf0ybInWTOatT0Exbnb2x888-WdbApNedZqcPn9Yq0WoL4IIKQXkxZNxKfAwzl4R6lQm" />
+            <img className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" alt="Noncovalent Interactions" src="/images/research-noncovalent.jpg" loading="lazy" />
           </div>
         </div>
         {/* Card 2 */}
@@ -32,7 +32,7 @@ export default function ResearchFocus() {
             Resolving the temporal evolution of protein-ligand systems to understand functional pathways and allosteric mechanisms at the atomic level.
           </p>
           <div className="mt-6 w-full h-32 bg-surface-container border border-border-subtle rounded overflow-hidden">
-            <img className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="MD Simulations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeSXZeeVJsXDDVqJ_3tgKM1VDY96Wd403LhcF3pRppgxQAq4ibRmUfBTIv69c-Xkfm53s58t93DEb3RJEYPGCVJYTvP5X-c3j1oXN6ejwefcpNYwx8cTdN1Ghflka9qxdepUKUS_1ExqAPeuHLBsONvUEn6aXH6tVksQ779cTyoHwBKdaSkNm4Swp7aPQIdaRZpYmzOGIQH-b63rYU_J03oRIkLZtiqdtbXFAK1UpQJtMtmCwcO7TP" />
+            <img className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" alt="MD Simulations" src="/images/research-md-simulations.jpg" loading="lazy" />
           </div>
         </div>
         {/* Card 3 */}
@@ -48,7 +48,7 @@ export default function ResearchFocus() {
             Predicting molecular recognition and binding affinities through rigorous electrostatic profiling and advanced docking algorithms.
           </p>
           <div className="mt-6 w-full h-32 bg-surface-container border border-border-subtle rounded overflow-hidden">
-            <img className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Protein Electrostatics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHp3kvBKvRmshZq1PS8-sUWx5ldlBipTm8OKAUEYDaYh9eii6GOT0RrsXEWe3m55LCP-KBz64RezntzcbKHQVJ55vDa0XBoqdpeHUzjVkywfw-yfhFsrSIdBupkDG-8HBOoBvKLRDc2EoiGV4WysL66Tpc-K4dFGiEFqSzyy0EUSR9EukeJF6plBSL1VJ2hZMRyCV2fCTm97YpOJVN5zTji2KPn1iwsFqnGx8Ml9m5CI2D8f9rZnbY" />
+            <img className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" alt="Protein Electrostatics" src="/images/research-electrostatics.jpg" loading="lazy" />
           </div>
         </div>
       </div>
