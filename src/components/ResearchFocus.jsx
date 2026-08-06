@@ -4,7 +4,7 @@ export default function ResearchFocus() {
       <h2 className="font-headline-section text-headline-section text-academic-navy border-l-4 border-academic-navy pl-4 mb-12">Research Focus Areas</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Card 1 */}
-        <div className="bg-surface-container-lowest border border-border-subtle rounded-lg p-6 hover:shadow-[0_4px_20px_rgba(15,23,42,0.05)] transition-shadow duration-300 flex flex-col h-full group">
+        <div className="bg-surface-container-lowest border border-border-subtle rounded-xl p-6 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(15,23,42,0.12)] hover:border-academic-navy/30 transition-all duration-300 flex flex-col h-full group cursor-default">
           <div className="flex items-center space-x-3 mb-4">
             <div className="w-10 h-10 rounded-full bg-metric-blue flex items-center justify-center text-academic-navy">
               <span className="material-symbols-outlined" data-icon="hub">hub</span>
@@ -20,7 +20,7 @@ export default function ResearchFocus() {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="bg-surface-container-lowest border border-border-subtle rounded-lg p-6 hover:shadow-[0_4px_20px_rgba(15,23,42,0.05)] transition-shadow duration-300 flex flex-col h-full group">
+        <div className="bg-surface-container-lowest border border-border-subtle rounded-xl p-6 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(15,23,42,0.12)] hover:border-academic-navy/30 transition-all duration-300 flex flex-col h-full group cursor-default">
           <div className="flex items-center space-x-3 mb-4">
             <div className="w-10 h-10 rounded-full bg-metric-blue flex items-center justify-center text-academic-navy">
               <span className="material-symbols-outlined" data-icon="timeline">timeline</span>
@@ -36,7 +36,7 @@ export default function ResearchFocus() {
           </div>
         </div>
         {/* Card 3 */}
-        <div className="bg-surface-container-lowest border border-border-subtle rounded-lg p-6 hover:shadow-[0_4px_20px_rgba(15,23,42,0.05)] transition-shadow duration-300 flex flex-col h-full group">
+        <div className="bg-surface-container-lowest border border-border-subtle rounded-xl p-6 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(15,23,42,0.12)] hover:border-academic-navy/30 transition-all duration-300 flex flex-col h-full group cursor-default">
           <div className="flex items-center space-x-3 mb-4">
             <div className="w-10 h-10 rounded-full bg-metric-blue flex items-center justify-center text-academic-navy">
               <span className="material-symbols-outlined" data-icon="electric_bolt">electric_bolt</span>

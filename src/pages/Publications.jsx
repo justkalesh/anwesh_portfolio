@@ -218,18 +218,24 @@ export default function Publications() {
 
           <div className="flex flex-col space-y-6">
             {publicationsList.map((pub) => (
-              <div key={pub.id} className="bg-surface-container-lowest border border-border-subtle rounded-lg p-6 hover:shadow-[0_4px_20px_rgba(15,23,42,0.05)] transition-all">
+              <a 
+                key={pub.id} 
+                href={pub.link || `https://scholar.google.com/scholar?q=${encodeURIComponent(pub.title)}`}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block bg-surface-container-lowest border border-border-subtle rounded-xl p-6 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(15,23,42,0.12)] hover:border-academic-navy/30 transition-all duration-300 group cursor-pointer"
+              >
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-3">
-                  <div className="font-label-mono text-label-mono text-slate-gray uppercase">{pub.journal}</div>
+                  <div className="font-label-mono text-label-mono text-slate-gray uppercase group-hover:text-academic-navy transition-colors">{pub.journal}</div>
                   <div className="font-label-mono text-label-mono text-slate-gray bg-surface-container px-3 py-1 rounded">{pub.date}</div>
                 </div>
-                <h4 className="font-subhead-bold text-subhead-bold text-academic-navy mb-3">
+                <h4 className="font-subhead-bold text-subhead-bold text-academic-navy mb-3 group-hover:underline">
                   {pub.title}
                 </h4>
                 <div className="font-body-secondary text-body-secondary text-on-surface-variant mb-4">
                   {pub.authors}
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </section>
@@ -240,11 +246,17 @@ export default function Publications() {
             <h2 className="font-headline-section text-headline-section text-academic-navy border-l-4 border-academic-navy pl-4 mb-8">Book Chapters</h2>
             <div className="flex flex-col space-y-4">
               {bookChapters.map(bc => (
-                <div key={bc.id} className="bg-surface-container-lowest border border-border-subtle rounded-lg p-5">
-                  <h4 className="font-subhead-bold text-subhead-bold text-academic-navy mb-2">{bc.title}</h4>
+                <a 
+                  key={bc.id} 
+                  href={bc.link || `https://scholar.google.com/scholar?q=${encodeURIComponent(bc.title)}`}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block bg-surface-container-lowest border border-border-subtle rounded-xl p-5 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(15,23,42,0.12)] hover:border-academic-navy/30 transition-all duration-300 group cursor-pointer"
+                >
+                  <h4 className="font-subhead-bold text-subhead-bold text-academic-navy mb-2 group-hover:underline">{bc.title}</h4>
                   <div className="font-body-secondary text-body-secondary text-on-surface-variant mb-1">{bc.authors}</div>
                   <div className="font-label-mono text-label-mono text-slate-gray">{bc.publisher}</div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -252,11 +264,17 @@ export default function Publications() {
             <h2 className="font-headline-section text-headline-section text-academic-navy border-l-4 border-academic-navy pl-4 mb-8">Books</h2>
             <div className="flex flex-col space-y-4">
               {books.map(b => (
-                <div key={b.id} className="bg-surface-container-lowest border border-border-subtle rounded-lg p-5">
-                  <h4 className="font-subhead-bold text-subhead-bold text-academic-navy mb-2">{b.title}</h4>
+                <a 
+                  key={b.id} 
+                  href={b.link || `https://scholar.google.com/scholar?q=${encodeURIComponent(b.title)}`}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block bg-surface-container-lowest border border-border-subtle rounded-xl p-5 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(15,23,42,0.12)] hover:border-academic-navy/30 transition-all duration-300 group cursor-pointer"
+                >
+                  <h4 className="font-subhead-bold text-subhead-bold text-academic-navy mb-2 group-hover:underline">{b.title}</h4>
                   <div className="font-body-secondary text-body-secondary text-on-surface-variant mb-1">{b.authors}</div>
                   <div className="font-label-mono text-label-mono text-slate-gray">{b.publisher}</div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -267,10 +285,16 @@ export default function Publications() {
           <h2 className="font-headline-section text-headline-section text-academic-navy border-l-4 border-academic-navy pl-4 mb-8">Manuscripts (Communicated / Under Preparation)</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {manuscripts.map(m => (
-              <div key={m.id} className="bg-surface-container-lowest border border-border-subtle rounded-lg p-5">
-                <h4 className="font-subhead-bold text-subhead-bold text-academic-navy mb-2">{m.title}</h4>
+              <a 
+                key={m.id} 
+                href={m.link || `https://scholar.google.com/scholar?q=${encodeURIComponent(m.title)}`}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block bg-surface-container-lowest border border-border-subtle rounded-xl p-5 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(15,23,42,0.12)] hover:border-academic-navy/30 transition-all duration-300 group cursor-pointer"
+              >
+                <h4 className="font-subhead-bold text-subhead-bold text-academic-navy mb-2 group-hover:underline">{m.title}</h4>
                 <div className="font-body-secondary text-body-secondary text-on-surface-variant">{m.authors}</div>
-              </div>
+              </a>
             ))}
           </div>
         </section>
