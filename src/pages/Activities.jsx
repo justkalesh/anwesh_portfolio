@@ -28,7 +28,7 @@ export default function Activities() {
     {
       title: "ACDS Lecture Series",
       logoIcon: "menu_book",
-      logoImg: "",
+      logoImg: "https://acds.edu.in/images/acdslogo.png",
       description: "Preparation of course study material on artificial intelligence and machine learning; delivering lectures; assessment of progress of participants; delivering hands-on sessions on computational biology and computational chemistry tools."
     },
     {
