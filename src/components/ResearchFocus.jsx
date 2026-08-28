@@ -15,9 +15,7 @@ export default function ResearchFocus() {
           <p className="font-body-secondary text-body-secondary text-on-surface-variant flex-grow">
             Exploring the forces that stabilize biomolecular structures, utilizing high-level computational methods to dissect complex binding networks.
           </p>
-          <div className="mt-6 w-full h-32 bg-surface-container border border-border-subtle rounded overflow-hidden">
-            <img className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" alt="Noncovalent Interactions" src="/images/research-noncovalent.jpg" loading="lazy" />
-          </div>
+
         </div>
         {/* Card 2 */}
         <div className="bg-surface-container-lowest border border-border-subtle rounded-xl p-6 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(15,23,42,0.12)] hover:border-academic-navy/30 transition-all duration-300 flex flex-col h-full group cursor-default">
@@ -31,9 +29,7 @@ export default function ResearchFocus() {
           <p className="font-body-secondary text-body-secondary text-on-surface-variant flex-grow">
             Resolving the temporal evolution of protein-ligand systems to understand functional pathways and allosteric mechanisms at the atomic level.
           </p>
-          <div className="mt-6 w-full h-32 bg-surface-container border border-border-subtle rounded overflow-hidden">
-            <img className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" alt="MD Simulations" src="/images/research-md-simulations.jpg" loading="lazy" />
-          </div>
+
         </div>
         {/* Card 3 */}
         <div className="bg-surface-container-lowest border border-border-subtle rounded-xl p-6 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(15,23,42,0.12)] hover:border-academic-navy/30 transition-all duration-300 flex flex-col h-full group cursor-default">
@@ -47,9 +43,7 @@ export default function ResearchFocus() {
           <p className="font-body-secondary text-body-secondary text-on-surface-variant flex-grow">
             Predicting molecular recognition and binding affinities through rigorous electrostatic profiling and advanced docking algorithms.
           </p>
-          <div className="mt-6 w-full h-32 bg-surface-container border border-border-subtle rounded overflow-hidden">
-            <img className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" alt="Protein Electrostatics" src="/images/research-electrostatics.jpg" loading="lazy" />
-          </div>
+
         </div>
       </div>
     </section>
